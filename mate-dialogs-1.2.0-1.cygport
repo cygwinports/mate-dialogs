@@ -1,0 +1,8 @@
+inherit mate
+
+
+src_install() {
+	cd ${B}
+	# gdialog conflicts with zenity package
+	cyginstall bin_SCRIPTS=
+}
