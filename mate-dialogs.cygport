@@ -1,15 +1,9 @@
 inherit mate
 
 NAME="mate-dialogs"
-VERSION=1.6.2
+VERSION=1.8.0
 RELEASE=1
 CATEGORY="MATE"
 SUMMARY="Display GTK+ dialogs from scripts"
 DESCRIPTION="MATE is a fork of the GNOME 2 desktop. It provides an intuitive
 and attractive desktop to Linux users using traditional metaphors."
-
-src_install() {
-	cd ${B}
-	# gdialog conflicts with zenity package
-	cyginstall bin_SCRIPTS=
-}
